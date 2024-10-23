@@ -1,0 +1,128 @@
+/* Main footer container */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3% 10% 0;
+    background-color: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  /* Left section for logo, description, and social icons */
+  .footer-left {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+    margin-bottom: 15px;
+  }
+  
+  /* Social media icons */
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Center section for company links */
+  .footer-center {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-center h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #bbb;
+    cursor: pointer;
+  }
+  
+  .footer-center ul li:hover {
+    color: #e67e22; /* Hover effect for links */
+  }
+  
+  /* Right section for contact information */
+  .footer-right {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-right h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-right ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .footer-right ul li:hover {
+    color: #e67e22; /* Hover effect for contact details */
+  } 
+
+  hr {
+    width: 100%;
+    opacity: 0.8;
+    border: none;
+    border-top: 2px solid #444;
+    
+  }
+
+  .copyright{
+    margin: auto;
+    margin-block: 20px;
+
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left, .footer-center, .footer-right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons img {
+      margin-bottom: 10px;
+    }
+  }
+  

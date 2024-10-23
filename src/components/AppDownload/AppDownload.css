@@ -1,0 +1,18 @@
+.app-download{
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+.app-download p{
+    font-size: 60px;
+}
+
+.app-download-platforms img{
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-right: 20px;
+}
+
+img:hover{
+    transform: scale(1.05);
+}

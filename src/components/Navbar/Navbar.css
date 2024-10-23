@@ -1,0 +1,115 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+  /* text-transform: capitalize; */
+  font-size: 20px;
+  color: #333;
+  /* transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 5px 0;
+  position: relative; */
+}
+
+.navbar-menu li:hover {
+  /* color: #007bff;  */
+  border-bottom: 2px solid tomato; /* Underline effect */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ae2828;
+  color: white;  
+}
+
+button input {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navbar img {
+    height: 35px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar img {
+    height: 30px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+
+

@@ -1,0 +1,120 @@
+.header{
+    background:url('./header_img.png') no-repeat;
+    background-size: cover;
+    margin: 30px auto;
+    height: 34vw;
+    position: relative;
+}
+
+
+.header-contents{
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    width: 50%;
+
+    /* fade in animation */
+    animation: fadeIn .7s ease-in; 
+
+}
+
+.header-contents h2{
+font-size: 75px;
+line-height: 100px;  
+font-weight: 600;
+}
+
+
+.header-contents p{
+    /* font-size: 20px; */
+    margin-bottom: 20px;
+}
+
+
+.header-contents .btn2{
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+/* Resposnive design */
+@media(max-width:1500px){
+    .header-contents{
+        width:80%;
+        left: 5%;
+        top: 35%;
+    }
+    .header-contents h2{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .header{
+        height: 60vh;
+    }
+    
+}
+
+
+
+@media(max-width:1200px){
+    .header-contents{
+        width:80%;
+        left: 10%;
+        top: 20%;
+    }
+    .header-contents h2{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .header{
+        height: 60vh;
+    }
+    
+}
+
+@media(max-width:720px){
+    .header-contents{
+        width:80%;
+        left: 10%;
+        top: 20%;
+    }
+    .header-contents h2{
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .header{
+        height: 40vh;
+    }
+    .header-contents p{
+        display: none;
+    }
+}
+
+@media(max-width:468px){
+    .header-contents{
+        width:100%;
+        left: 10%;
+        top: 30%;
+    }
+    .header-contents h2{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .header{
+        height: 50vh;
+    }
+    .header-contents p{
+        display: none;
+    }
+}
+
+
