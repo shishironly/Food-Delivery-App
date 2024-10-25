@@ -1,10 +1,16 @@
-/* Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
   background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  z-index:1000;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar img {
@@ -19,16 +25,11 @@
 
 .navbar-menu li {
   cursor: pointer;
-  /* text-transform: capitalize; */
   font-size: 20px;
   color: #333;
-  /* transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding: 5px 0;
-  position: relative; */
 }
 
 .navbar-menu li:hover {
-  /* color: #007bff;  */
   border-bottom: 2px solid tomato; /* Underline effect */
 }
 
